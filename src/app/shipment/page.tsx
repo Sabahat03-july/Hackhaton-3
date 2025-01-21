@@ -45,7 +45,7 @@ export default function ShipmentForm() {
   const [length, setLength] = useState(0)
 
   //alert-dailog
-  const [isDialogOpen, setIsDialogOpen] = useState(false)
+  // const [isDialogOpen, setIsDialogOpen] = useState(false)
   const [shipmentResponse, setShipmentResponse] = useState(null)
 
   const handleSubmit = async (e: React.FormEvent) => {

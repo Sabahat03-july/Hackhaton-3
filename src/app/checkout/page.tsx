@@ -136,7 +136,7 @@ export default function CheckoutForm() {
               <div className="grid gap-2">
                 <Input className="rounded-md py-6" placeholder="PAN" />
                 <p className="text-xs text-gray-500">
-                  Enter your PAN to enable payment with UPI, Net Banking or local card methods
+                  Enter your PAN to enable payment with UPI Net Banking or local card methods
                 </p>
               </div>
               <div className="flex items-center space-x-2">
@@ -180,7 +180,7 @@ export default function CheckoutForm() {
                 <span>₹ {totalAmount}</span>
               </div>
               <p className="mt-1 text-xs text-gray-500">
-                (The total reflects the price of your order, including all duties and taxes)
+                (The total reflects the price of your order including all duties and taxes)
               </p>
             </div>
 
@@ -203,7 +203,7 @@ export default function CheckoutForm() {
               )})}
 
               <Button className="w-full rounded-full py-6" onClick={handlePayment}>
-                Let's Pay
+                Let Pay
               </Button>
 
             </div>

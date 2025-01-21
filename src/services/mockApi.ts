@@ -2,6 +2,21 @@
 
 import { client } from "@/sanity/lib/client";
 
+// Define the Product type
+interface Product {
+  id: number;
+  title: string;
+  price: number;
+  discountPercentage?: number;
+  category?: string;
+  image: string;
+  description: string;
+  rating?: {
+    rate: number;
+    count: number;
+  };
+}
+
 async function uploadImageToSanity(imageUrl: string) {
   try {
     const response = await fetch(imageUrl);
@@ -19,12 +34,12 @@ async function uploadImageToSanity(imageUrl: string) {
 export async function fetchData() {
   try {
     const response = await fetch("https://fakestoreapi.com/products");
+    if (!response.ok) throw new Error(`Failed to fetch products: ${response.statusText}`);
 
-    // if (!response.ok) throw new Error(`Failed to fetch products: ${response.statusText}`);
-    const products = await response.json();
+    const products: Product[] = await response.json(); // Use the Product type here
 
-    // // Upload images concurrently
-    const uploadPromises = products.map(async (product: any) => {
+    // Upload images concurrently
+    const uploadPromises = products.map(async (product) => {
       const imageAsset = await uploadImageToSanity(product.image);
 
       const sanityProduct = {
