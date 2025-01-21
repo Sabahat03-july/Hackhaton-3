@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Button } from "@/components/ui/button"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { Truck, User, Phone, Home, Building, MapPin, Package, Weight, Ruler } from 'lucide-react'
+import { Truck, Building , User, Package } from 'lucide-react'
 import { postReq } from '@/services/shipmentApi'
 
 import JsonResponseViewer from '@/components/JsonResponseViewer'

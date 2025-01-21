@@ -2,7 +2,6 @@ import FilterHeader from '@/components/FilterHeader'
 import FilterSidebar from '@/components/FilterSidebar'
 import ProductsCards from '@/components/ProductsCards'
 import RelatedCategories from '@/components/RelatedCategories'
-import { fetchData } from '@/services/mockApi'
 import React from 'react'
 
 async function ProductPage() {

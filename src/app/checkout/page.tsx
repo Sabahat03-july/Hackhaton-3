@@ -41,7 +41,7 @@ export default function CheckoutForm() {
   
 
   function handlePayment(){
-    alert("payment successfull ✅")
+    alert("payment successful ✅")
     
     localStorage.setItem("cart", JSON.stringify([]))
     setCartItem([])
@@ -58,7 +58,7 @@ export default function CheckoutForm() {
           <div className="space-y-4">
             <h2 className="text-xl font-medium">How would you like to get your order?</h2>
             <p className="text-sm text-gray-500">
-              Customs regulation for India require a copy of the recipient&apos;s KYC. The address on the KYC needs to match the
+              Customs regulation for India require a copy of the recipients KYC. The address on the KYC needs to match the
               shipping address.
             </p>
             <Button variant="outline" className="w-full justify-start gap-4 rounded-xl border-2 py-6">
@@ -98,7 +98,7 @@ export default function CheckoutForm() {
                   <SelectContent>
                     <SelectItem value="delhi">Delhi</SelectItem>
                     <SelectItem value="maharashtra">Maharashtra</SelectItem>
-                    <SelectItem value="karnataka">Karnataka</SelectItem>
+                    <SelectItem value="karnataka">karnataka</SelectItem>
                   </SelectContent>
                 </Select>
                 <Input className="rounded-md py-6" placeholder="India" disabled />
@@ -117,7 +117,7 @@ export default function CheckoutForm() {
           </div>
 
           <div className="space-y-4">
-            <h2 className="text-xl font-medium">What&apos;s your contact information?</h2>
+            <h2 className="text-xl font-medium">What is your contact information?</h2>
             <div className="grid gap-4">
               <div className="grid gap-2">
                 <Input className="rounded-md py-6" placeholder="Email" type="email" />
@@ -131,7 +131,7 @@ export default function CheckoutForm() {
           </div>
 
           <div className="space-y-4">
-            <h2 className="text-xl font-medium">What&apos;s your PAN?</h2>
+            <h2 className="text-xl font-medium">What is your PAN?</h2>
             <div className="grid gap-4">
               <div className="grid gap-2">
                 <Input className="rounded-md py-6" placeholder="PAN" />
